@@ -1,0 +1,775 @@
+{
+	"info": {
+		"_postman_id": "8fc1a737-21d1-4667-a1f5-409b7cb563b7",
+		"name": "Express Mongo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19413034"
+	},
+	"item": [
+		{
+			"name": "Duration",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL_DEVELOPMENT}}/{{PrefixApi}}/durations",
+							"host": [
+								"{{BASE_URL_DEVELOPMENT}}"
+							],
+							"path": [
+								"{{PrefixApi}}",
+								"durations"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL_DEVELOPMENT}}/{{PrefixApi}}/durations",
+									"host": [
+										"{{BASE_URL_DEVELOPMENT}}"
+									],
+									"path": [
+										"{{PrefixApi}}",
+										"durations"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "753"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2f1-+xD06OSgqdlIaUE6OJfS3q3noeM\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 27 Jul 2023 17:05:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Success get all duration type\",\n    \"data\": [\n        {\n            \"_id\": \"64c2a0a3c691bd810b517d9d\",\n            \"name\": \"15 Minutes\",\n            \"time\": 15,\n            \"time_type\": \"minutes\",\n            \"__v\": 0,\n            \"createdAt\": \"2023-07-27T16:51:47.732Z\",\n            \"updatedAt\": \"2023-07-27T16:51:47.732Z\"\n        },\n        {\n            \"_id\": \"64c2a0a3c691bd810b517d9e\",\n            \"name\": \"30 Minutes\",\n            \"time\": 30,\n            \"time_type\": \"minutes\",\n            \"__v\": 0,\n            \"createdAt\": \"2023-07-27T16:51:47.733Z\",\n            \"updatedAt\": \"2023-07-27T16:51:47.733Z\"\n        },\n        {\n            \"_id\": \"64c2a0a3c691bd810b517d9f\",\n            \"name\": \"45 Minutes\",\n            \"time\": 45,\n            \"time_type\": \"minutes\",\n            \"__v\": 0,\n            \"createdAt\": \"2023-07-27T16:51:47.733Z\",\n            \"updatedAt\": \"2023-07-27T16:51:47.733Z\"\n        },\n        {\n            \"_id\": \"64c2a0a3c691bd810b517da0\",\n            \"name\": \"1 Hours\",\n            \"time\": 1,\n            \"time_type\": \"hours\",\n            \"__v\": 0,\n            \"createdAt\": \"2023-07-27T16:51:47.733Z\",\n            \"updatedAt\": \"2023-07-27T16:51:47.733Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Duration",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"20 Minutes\",\n    \"time\": 20,\n    \"time_type\": \"minutes\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL_DEVELOPMENT}}/{{PrefixApi}}/durations",
+							"host": [
+								"{{BASE_URL_DEVELOPMENT}}"
+							],
+							"path": [
+								"{{PrefixApi}}",
+								"durations"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"20 Minutes\",\n    \"time\": 20,\n    \"time_type\": \"minutes\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL_DEVELOPMENT}}/{{PrefixApi}}/durations",
+									"host": [
+										"{{BASE_URL_DEVELOPMENT}}"
+									],
+									"path": [
+										"{{PrefixApi}}",
+										"durations"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "57"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"39-bQQ/6WAHGxEdxiZ0hMSGNnreiuI\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 27 Jul 2023 17:06:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Success create duration type\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Consultation Type",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL_DEVELOPMENT}}/{{PrefixApi}}/consultations",
+							"host": [
+								"{{BASE_URL_DEVELOPMENT}}"
+							],
+							"path": [
+								"{{PrefixApi}}",
+								"consultations"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL_DEVELOPMENT}}/{{PrefixApi}}/consultations",
+									"host": [
+										"{{BASE_URL_DEVELOPMENT}}"
+									],
+									"path": [
+										"{{PrefixApi}}",
+										"consultations"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "482"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1e2-CjuECZrlQvKqFy2DMznQZS2/ngs\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 27 Jul 2023 17:08:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Success get all consultation type\",\n    \"data\": [\n        {\n            \"_id\": \"64c2a0a4c691bd810b517da4\",\n            \"name\": \"chat\",\n            \"__v\": 0,\n            \"createdAt\": \"2023-07-27T16:51:48.227Z\",\n            \"updatedAt\": \"2023-07-27T16:51:48.227Z\"\n        },\n        {\n            \"_id\": \"64c2a0a4c691bd810b517da5\",\n            \"name\": \"video call\",\n            \"__v\": 0,\n            \"createdAt\": \"2023-07-27T16:51:48.227Z\",\n            \"updatedAt\": \"2023-07-27T16:51:48.227Z\"\n        },\n        {\n            \"_id\": \"64c2a0a4c691bd810b517da6\",\n            \"name\": \"call\",\n            \"__v\": 0,\n            \"createdAt\": \"2023-07-27T16:51:48.227Z\",\n            \"updatedAt\": \"2023-07-27T16:51:48.227Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Offline Meet\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL_DEVELOPMENT}}/{{PrefixApi}}/consultations",
+							"host": [
+								"{{BASE_URL_DEVELOPMENT}}"
+							],
+							"path": [
+								"{{PrefixApi}}",
+								"consultations"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Offline Meet\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL_DEVELOPMENT}}/{{PrefixApi}}/consultations",
+									"host": [
+										"{{BASE_URL_DEVELOPMENT}}"
+									],
+									"path": [
+										"{{PrefixApi}}",
+										"consultations"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "61"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3d-5cxUzTVEYe1EXo+Nrv6cK4DQjX4\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 27 Jul 2023 17:09:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Success create consultation type\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Schedule",
+			"item": [
+				{
+					"name": "Create Schedule",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"duration\": \"15 Minutes\",\n    \"consultation\": \"chat\",\n    \"time\": \"09:00\",\n    \"date_start\": \"2023-09-12\",\n    \"date_end\": \"2023-09-27\",\n    \"repeatable\": false,\n    \"type_repeatable\": \"\",\n    \"price\": \"IDR 200,000\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL_DEVELOPMENT}}/{{PrefixApi}}/schedules",
+							"host": [
+								"{{BASE_URL_DEVELOPMENT}}"
+							],
+							"path": [
+								"{{PrefixApi}}",
+								"schedules"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success Single Date",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"duration\": \"15 Minutes\",\n    \"consultation\": \"chat\",\n    \"time\": \"09:00\",\n    \"date_start\": \"2023-09-12\",\n    \"date_end\": \"2023-09-12\",\n    \"repeatable\": false,\n    \"type_repeatable\": \"\",\n    \"price\": \"IDR 200,000\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL_DEVELOPMENT}}/{{PrefixApi}}/schedules",
+									"host": [
+										"{{BASE_URL_DEVELOPMENT}}"
+									],
+									"path": [
+										"{{PrefixApi}}",
+										"schedules"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "52"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"34-0GT1ac/qAS5nbfEzajRUzxpHiqY\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 27 Jul 2023 16:57:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Success create schedule\"\n}"
+						},
+						{
+							"name": "Success Multiple Date",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"duration\": \"15 Minutes\",\n    \"consultation\": \"chat\",\n    \"time\": \"09:00\",\n    \"date_start\": \"2023-09-12\",\n    \"date_end\": \"2023-09-27\",\n    \"repeatable\": false,\n    \"type_repeatable\": \"\",\n    \"price\": \"IDR 200,000\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL_DEVELOPMENT}}/{{PrefixApi}}/schedules",
+									"host": [
+										"{{BASE_URL_DEVELOPMENT}}"
+									],
+									"path": [
+										"{{PrefixApi}}",
+										"schedules"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "52"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"34-0GT1ac/qAS5nbfEzajRUzxpHiqY\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 27 Jul 2023 16:58:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Success create schedule\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Schedule based on Date",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL_DEVELOPMENT}}/{{PrefixApi}}/schedules?date_start=2023-09-12&date_end=2023-09-20&limit=10&page=1",
+							"host": [
+								"{{BASE_URL_DEVELOPMENT}}"
+							],
+							"path": [
+								"{{PrefixApi}}",
+								"schedules"
+							],
+							"query": [
+								{
+									"key": "date_start",
+									"value": "2023-09-12"
+								},
+								{
+									"key": "date_end",
+									"value": "2023-09-20"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{Token}}",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"greg@gmail.com\",\n    \"password\": \"admin\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL_DEVELOPMENT}}/{{PrefixApi}}/auths/login",
+					"host": [
+						"{{BASE_URL_DEVELOPMENT}}"
+					],
+					"path": [
+						"{{PrefixApi}}",
+						"auths",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"greg@gmail.com\",\n    \"password\": \"admin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL_DEVELOPMENT}}/{{PrefixApi}}/auths/login",
+							"host": [
+								"{{BASE_URL_DEVELOPMENT}}"
+							],
+							"path": [
+								"{{PrefixApi}}",
+								"auths",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "213"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d5-njYdXVTEv+K5HzX14cZ2Rb78Czo\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 27 Jul 2023 16:54:56 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Success login\",\n    \"data\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyZWdAZ21haWwuY29tIiwiaWF0IjoxNjkwNDc2ODk2LCJleHAiOjE2OTEwODE2OTZ9.qnxJ4HSr_SNT5gq8dbbfdbXI2GwJu8xvSi3FJzaoO1I\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"greg@gmail.com\",\n    \"password\": \"admin\",\n    \"gender\": \"male\",\n    \"name\": \"Greg\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL_DEVELOPMENT}}/{{PrefixApi}}/auths/register",
+					"host": [
+						"{{BASE_URL_DEVELOPMENT}}"
+					],
+					"path": [
+						"{{PrefixApi}}",
+						"auths",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"greg@gmail.com\",\n    \"password\": \"admin\",\n    \"gender\": \"male\",\n    \"name\": \"Greg\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL_DEVELOPMENT}}/{{PrefixApi}}/auths/register",
+							"host": [
+								"{{BASE_URL_DEVELOPMENT}}"
+							],
+							"path": [
+								"{{PrefixApi}}",
+								"auths",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "45"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2d-R0qIPu3Wg3YDpZuSUJmr/KNEmx4\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 27 Jul 2023 16:54:35 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Success register\"\n}"
+				}
+			]
+		}
+	]
+}
